@@ -1,0 +1,19 @@
+.login{
+    color: black;
+}
+.login_form_div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.login_form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+.login_form input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
