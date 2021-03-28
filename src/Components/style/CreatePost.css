@@ -1,18 +1,16 @@
-.signup_class{
+.create_post_form_div{
     width: 100%;
-}
-.signup_form_div{    
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
 }
-.signup_form{
+.create_post_form{
     display: flex;
     flex-direction: column;
     width: 400px;
 }
-.signup_form input{
+.create_post_form input{
     margin-top: 10px;
     margin-bottom: 10px;
 }
