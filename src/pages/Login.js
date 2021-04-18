@@ -43,7 +43,10 @@ function Login() {
           history.push("/");
         }
       })
-      .catch((err) => alert(err.message));
+      .catch((err) => {
+        console.log(err);
+        return alert(err.message)
+      });
   }
     return (
       <div className="login">

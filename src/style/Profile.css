@@ -1,0 +1,46 @@
+.Profile_header{
+    border-bottom: 1px solid black;
+    margin-top: 10px;
+    
+}
+.profile_page{
+    width: 100%;
+    color: black;
+}
+.Post-section{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.post_div{
+    padding: 1rem;
+    flex: 30%;
+    max-width: 400px;
+    max-height: 400px;
+}
+.post_div img{
+    width: 100%;
+    height: 100%;
+    border: 1px solid grey;
+}
+.profile_pic{
+  
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    overflow: hidden;
+    text-align: center;
+    background-color: grey;
+    color: white;
+    font-size: x-large;
+    
+}
+.profile_pic img{
+    width: 100%;
+    height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}

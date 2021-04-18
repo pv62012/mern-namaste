@@ -15,7 +15,7 @@ function Header() {
   return (
     <div className="header">
       <div className="logo">
-        <img src="./images/namasteLogoB.png" alt="" />
+        <img src="./images/namasteLogoB.png" alt="namaste" />
       </div>
       <div className="header_buttons">
         {
@@ -24,7 +24,7 @@ function Header() {
         <Link onClick={handleLogout} >
           <button>Logout </button>
             </Link>
-             <Link to="profile">Profile</Link>
+             <Link to="/profile">Profile</Link>
           </>
           ) : (
               <>

@@ -3,7 +3,9 @@
 export const intitialState = {
   basket: [],
   user: null,
-  data:[]
+  data: [],
+  followers: [],
+  following:[]
 };
   
 
@@ -19,6 +21,17 @@ const reducer = (state, action) => {
         ...state,
         data: action.data,
       };
+    case "UPDATE":
+      return {
+        ...state,
+        followers: action.payload.followers,
+        following:action.payload.following,
+      }
+    case "UPDATEPIC":
+      return {
+        ...state,
+        pic:action.payload
+      }
     case "LOGOUT":
       return {
         ...state,

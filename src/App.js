@@ -8,6 +8,8 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import { useEffect } from 'react';
 import { useStateValue } from './state/StateProvider';
+import UserProfile from './pages/UserProfile';
+import SubscribeUsersPost from './pages/SubscribeUsersPost';
 
 
 function App() {
@@ -16,7 +18,7 @@ function App() {
  useEffect(() => {
    dispatch({
      type: "SET_USER",
-     user: localStorage.getItem("user"),
+     user: JSON.parse(localStorage.getItem("user")),
    });
    return () => {
    }
@@ -30,7 +32,7 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path={user?"/":"/profile"}>
+          <Route exact path={user ? "/profile" : "/"}>
             <Profile />
           </Route>
           <Route exact path="/login">
@@ -38,6 +40,12 @@ function App() {
           </Route>
           <Route path="/signup">
             <Signup />
+          </Route>
+          <Route path="/profile/:userid">
+            <UserProfile />
+          </Route>
+          <Route path="/myfollowingpost">
+            <SubscribeUsersPost/>
           </Route>
         </Switch>
       </div>
